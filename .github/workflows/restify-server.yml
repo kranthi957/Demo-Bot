@@ -23,9 +23,15 @@ jobs:
          cd bot
          pwd
          npm install    
-
+# Replace with the command to start your Restify server
     - name: Start Restify server
       run: |
          cd bot
          pwd
-         npm run dev:teamsfx  # Replace with the command to start your Restify server
+         npm run dev:teamsfx
+
+    - name: Wait for server to start
+      run: sleep 5  # Adjust the duration as needed to allow the server to start
+
+    - name: Make an API request
+      run: curl http://localhost:3978/api/notification
