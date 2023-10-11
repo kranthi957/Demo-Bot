@@ -10,7 +10,7 @@
         "dev:teamsfx:start": "env-cmd --silent -f .env.teamsfx.local npm run start",
         "dev": "nodemon --watch ./src --exec node --inspect=9239 --signal SIGINT -r ts-node/register ./src/index.ts",
         "build": "tsc --build && shx cp -r ./src/adaptiveCards ./lib/src",
-        "start": "node ./lib/src/index.js",
+        "start": "node ./lib/src/index.ts",
         "watch": "nodemon --watch ./src --exec \"npm run start\"",
         "test": "echo \"Error: no test specified\" && exit 1"
     },
