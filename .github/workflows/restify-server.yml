@@ -25,4 +25,7 @@ jobs:
          npm install    
 
     - name: Start Restify server
-      run: npm run dev:teamsfx  # Replace with the command to start your Restify server
+      run: |
+         cd bot
+         pwd
+         npm run dev:teamsfx  # Replace with the command to start your Restify server
