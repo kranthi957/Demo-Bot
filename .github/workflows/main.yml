@@ -46,5 +46,4 @@ jobs:
            cd bot
            pwd
            npm install
-           npm run build
-           npm run dev:teamsfx
+           npm run dev:teamsfx:github
