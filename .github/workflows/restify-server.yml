@@ -22,7 +22,9 @@ jobs:
       run: |
          cd bot
          pwd
-         npm install    
+         npm install
+         npm run build 
+             
 # Replace with the command to start your Restify server
     - name: Start Restify server
       run: |
