@@ -1,8 +1,7 @@
 {
     "scripts": {
-      "start": "env-cmd --silent -f .env.teamsfx.local npm run dev",
-      "dev": "nodemon --watch ./src --exec node --inspect=9239 --signal SIGINT -r ts-node/register ./src/index.ts",
-      "start1": "env-cmd --silent -f .env.teamsfx.local npm run dev",
+      "dev:teamsfx": "env-cmd --silent -f .env.teamsfx.local npm run dev",
+      "start": "node -f .env.teamsfx.local ./lib/src/index.js",
       "build": "tsc --build && shx cp -r ./src/adaptiveCards ./lib/src"
     }
   }
