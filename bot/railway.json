@@ -1,0 +1,6 @@
+{
+    "scripts": {
+        "start": "node -f .env.teamsfx.local ./lib/src/index.js",
+      "build": "tsc --build && shx cp -r ./src/adaptiveCards ./lib/src"
+    }
+  }
